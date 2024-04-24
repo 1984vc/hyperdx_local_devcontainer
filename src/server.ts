@@ -1,6 +1,3 @@
-import { initSDK } from '@hyperdx/node-opentelemetry';
-initSDK({})
-
 import express from 'express';
 
 const app = express();
