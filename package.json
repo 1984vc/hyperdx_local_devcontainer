@@ -1,0 +1,19 @@
+{
+  "name": "hyperdx_local_devcontainer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "HYPERDX_API_KEY='aaaaaaaa-bbbb-cccc-ffffffffffff' OTEL_EXPORTER_OTLP_ENDPOINT='http://hyperdx:4318' OTEL_SERVICE_NAME='demo' ts-node -r '@hyperdx/node-opentelemetry/build/src/tracing' src/server.ts"
+  },
+  "dependencies": {
+    "@hyperdx/node-opentelemetry": "^0.6.1",
+    "express": "^4.19.2",
+    "langchain": "^0.1.33"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
